@@ -13,9 +13,24 @@ import uuid
 import logging
 import shutil
 import uvicorn
+from fastapi.middleware.cors import CORSMiddleware
 
 logging.basicConfig(filename="app.log", level=logging.INFO)
 app = FastAPI()
+
+origins = [
+         "https://chatwithgenie.onrender.com",
+         "http://chatwithgenie.onrender.com",
+         # Include any other domains or origins as needed
+     ]
+
+app.add_middleware(
+         CORSMiddleware,
+         allow_origins=origins,
+         allow_credentials=True,
+         allow_methods=["*"],
+         allow_headers=["*"],
+)
 
 # Define your API endpoints here
 @app.get("/")

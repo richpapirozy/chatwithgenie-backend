@@ -15,4 +15,5 @@ fastapi
 uvicorn
 streamlit
 python-multipart
+fastapi-cors
 # pysqlite3-binary # to be added for LINUX environments
