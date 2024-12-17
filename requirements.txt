@@ -1,0 +1,18 @@
+langchain
+langchain-openai
+langchain-core
+langchain_community
+docx2txt
+pypdf
+langchain_chroma
+sentence_transformers
+ipykernel
+langchainhub
+bs4
+python-dotenv
+unstructured
+fastapi
+uvicorn
+streamlit
+python-multipart
+# pysqlite3-binary # to be added for LINUX environments

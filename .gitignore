@@ -1,0 +1,6 @@
+.env
+/genv
+app.log
+/chroma_db
+doc_chatbot_app.db
+app.log
